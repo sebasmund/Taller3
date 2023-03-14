@@ -72,6 +72,36 @@
                     Nuevo Medicamento 
                   </button>
                   </div>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario para insertar nuevo medicamento</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                  <label for="Nombre" class="form-label">Nombre</label>
+                                  <input type="text" class="form-control" id="Nombre" aria-describedby="emailHelp" placeholder="Escriba el nombre">
+                                  <div id="emailHelp" class="form-text"></div>
+                                </div>
+                                <div class="mb-3">
+                                  <label for="Precio" class="form-label">Precio</label>
+                                  <input type="text" class="form-control" id="ID" placeholder="Escriba el precio">
+                                </div>
+                              </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary" id="NuevoMed">Guardar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+                  <script src="js/function.js"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
             </div>
         </div>
         
