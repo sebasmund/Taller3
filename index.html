@@ -1,127 +1,133 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Taller 3</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://portal.acta.org.co/acta-files/uploads/file242.png" />
-  </head>
-  <body>
-    <div class="container-fluid mt-4">
-        <div class="row">
-            <div class="col-md-12 d-flex justify-content-center">
-                <div class="page-header">
-                    <h1>
-                     <small>Tabla de Medicamentos</small>
-                    </h1>
-                </div>
-            </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taller 3</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="https://portal.acta.org.co/acta-files/uploads/file242.png" />
+</head>
+
+<body>
+  <div class="container-fluid mt-4">
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-center">
+        <div class="page-header">
+          <h1>
+            <small>Tabla de Medicamentos</small>
+          </h1>
         </div>
-        <div class="row">
-            <div class="col-md-10" id="usuarios">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Marca</th>
-                        <th scope="col">Presentación</th>
-                        <th scope="col">Cantidad</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Loratadina</td>
-                        <td>3.700$</td>
-                        <td>GENFAR</td>
-                        <td>Tabletas</td>
-                        <td>10 tabletas</td>
-                      </tr>
-                      <tr>
-                        <td>Acetaminofén</td>
-                        <td>7.900$</td>
-                        <td>A&G</td>
-                        <td>Jarabe</td>
-                        <td>90 Mililitros</td>
-                      </tr>
-                      <tr>
-                        <td>Betametasona</td>
-                        <td>8.600$</td>
-                        <td>MK</td>
-                        <td>Crema</td>
-                        <td>20 Gramos</td>
-                      </tr>
-                      <tr>
-                        <td>Clorfeniramina</td>
-                        <td>5.700$</td>
-                        <td>LABINCO</td>
-                        <td>Jarabe</td>
-                        <td>120 Mililitros</td>
-                      </tr>
-                      <tr>
-                        <td>Paracetamol</td>
-                        <td>10.200$</td>
-                        <td>BAYER</td>
-                        <td>Tabletas</td>
-                        <td>30 Tabletas</td>
-                      </tr>                          
-                    </tbody>
-                  </table>
-                  <div style="text-align: center;"> 
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Nuevo Medicamento 
-                  </button>
-                  </div>
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario para insertar Medicamento</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                  <label for="Nombre" class="form-label">Nombre</label>
-                                  <input type="text" class="form-control" id="Nombre" placeholder="Escriba el nombre">
-                                </div>
-                                <div class="mb-3">
-                                  <label for="Precio" class="form-label">Precio</label>
-                                  <input type="text" class="form-control" id="Precio" placeholder="Escriba el precio">
-                                </div>
-                                <div class="mb-3">
-                                  <label for="Marca" class="form-label">Marca</label>
-                                  <input type="text" class="form-control" id="Marca" placeholder="Escriba la marca">                                
-                                </div>
-                                <div class="mb-3">
-                                  <label for="Presentacion" class="form-label">Presentación</label>
-                                  <input type="text" class="form-control" id="Presentación" placeholder="Escriba la presentación">                                 
-                                </div>
-                                <div class="mb-3">
-                                  <label for="Cantidad" class="form-label">Cantidad</label>
-                                  <input type="text" class="form-control" id="Cantidad" placeholder="Escriba la cantidad">
-                                </div>
-                              </form>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                          <button type="button" class="btn btn-primary" id="NuevoMed">Guardar</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-10" id="Medicamentos">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Marca</th>
+              <th scope="col">Presentación</th>
+              <th scope="col">Cantidad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Loratadina</td>
+              <td>3.700$</td>
+              <td>GENFAR</td>
+              <td>Tabletas</td>
+              <td>10 tabletas</td>
+            </tr>
+            <tr>
+              <td>Acetaminofén</td>
+              <td>7.900$</td>
+              <td>A&G</td>
+              <td>Jarabe</td>
+              <td>90 Mililitros</td>
+            </tr>
+            <tr>
+              <td>Betametasona</td>
+              <td>8.600$</td>
+              <td>MK</td>
+              <td>Crema</td>
+              <td>20 Gramos</td>
+            </tr>
+            <tr>
+              <td>Clorfeniramina</td>
+              <td>5.700$</td>
+              <td>LABINCO</td>
+              <td>Jarabe</td>
+              <td>120 Mililitros</td>
+            </tr>
+            <tr>
+              <td>Paracetamol</td>
+              <td>10.200$</td>
+              <td>BAYER</td>
+              <td>Tabletas</td>
+              <td>30 Tabletas</td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="text-align: center;">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Nuevo Medicamento
+          </button>
         </div>
-        <footer>
-          <p>Realizado por:</p>
-          <ul>
-            <li>Sebastian Mundaray</li>
-            <li>Miguel Méndez</li>
-          </ul>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
-        <script src="js/functions.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario para insertar Medicamento</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="Nombre" placeholder="Escriba el nombre">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Precio" class="form-label">Precio</label>
+                    <input type="text" class="form-control" id="Precio" placeholder="Escriba el precio">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Marca" class="form-label">Marca</label>
+                    <input type="text" class="form-control" id="Marca" placeholder="Escriba la marca">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Presentacion" class="form-label">Presentación</label>
+                    <input type="text" class="form-control" id="Presentacion" placeholder="Escriba la presentación">
+                  </div>
+                  <div class="mb-3">
+                    <label for="Cantidad" class="form-label">Cantidad</label>
+                    <input type="text" class="form-control" id="Cantidad" placeholder="Escriba la cantidad">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" id="NuevoMed">Guardar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Realizado por:</p>
+      <ul>
+        <li>Sebastian Mundaray</li>
+        <li>Miguel Méndez</li>
+      </ul>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="js/functions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
